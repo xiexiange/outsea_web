@@ -1,0 +1,36 @@
+{
+  "siteName": "Outsea Picks",
+  "siteDescription": "Curated product recommendations for global shoppers",
+  "siteUrl": "https://example.com",
+  "defaultLocale": "en",
+  "iconText": "OP",
+  "iconImage": "",
+  "locales": {
+    "en": {
+      "label": "English",
+      "htmlLang": "en",
+      "dir": "ltr",
+      "siteName": "Outsea Picks",
+      "siteDescription": "Honest reviews and affiliate picks for smart overseas shopping"
+    },
+    "zh": {
+      "label": "中文",
+      "htmlLang": "zh-CN",
+      "dir": "ltr",
+      "siteName": "出海好物",
+      "siteDescription": "面向海外华人与跨境买家的精选好物与真实体验分享"
+    },
+    "ja": {
+      "label": "日本語",
+      "htmlLang": "ja",
+      "dir": "ltr",
+      "siteName": "Outsea Picks",
+      "siteDescription": "海外向けおすすめ商品レビューとアフィリエイト厳選"
+    }
+  },
+  "tutorialNav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Deals", "url": "/tags/deals/" },
+    { "label": "Guides", "url": "/tags/guides/" }
+  ]
+}

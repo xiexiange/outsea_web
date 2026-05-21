@@ -1,0 +1,25 @@
+{
+  "name": "outsea-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "clean": "node scripts/clean.mjs",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "dependencies": {
+    "@mdit/plugin-katex": "^0.25.2",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.47",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "mermaid": "^11.15.0",
+    "minisearch": "^7.2.0",
+    "shiki": "^4.1.0"
+  }
+}

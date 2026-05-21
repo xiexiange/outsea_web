@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>搜索 · 出海好物</title>
+    <meta name="description" content="面向海外华人与跨境买家的精选好物与真实体验分享" />
+    <link rel="canonical" href="https://example.com/zh/search/" />
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="搜索 · 出海好物" />
+    <meta property="og:description" content="面向海外华人与跨境买家的精选好物与真实体验分享" />
+    <meta property="og:site_name" content="出海好物" />
+    <meta property="og:url" content="https://example.com/zh/search/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="搜索 · 出海好物" />
+    <meta name="twitter:description" content="面向海外华人与跨境买家的精选好物与真实体验分享" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/shiki.css" />
+    
+  </head>
+  <body data-locale="zh" data-locale-prefix="/zh/">
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="header-left icon-link" href="/zh/" aria-label="首页">
+          <span class="site-icon">OP</span>
+        </a>
+        <nav class="header-center primary-nav" aria-label="Main">
+          <a href="/zh/">Home</a><span class="nav-sep">/</span><a href="/zh/tags/deals/">Deals</a><span class="nav-sep">/</span><a href="/zh/tags/guides/">Guides</a>
+        </nav>
+        <div class="header-right">
+          
+          <button id="search-trigger" class="search-trigger" type="button">搜索</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container content-layout">
+      <aside class="article-list-pane">
+  <h2 class="pane-title">文章列表</h2>
+  <ul class="article-list"><li class="article-list-item ">
+  <a href="/zh/posts/portable-charger-2026/">
+    <span class="article-list-title">2026 出国必备：便携充电宝怎么选</span>
+    <span class="meta">2026-05-21 10:00:00</span>
+  </a>
+</li></ul>
+</aside>
+      <main class="article-content-pane">
+        <section class="hero">
+  <h1>搜索结果</h1>
+  <p class="muted">支持标题、摘要、标签、正文模糊匹配。</p>
+</section>
+<section id="search-results" class="grid"></section>
+      </main>
+      
+    </div>
+
+    <div id="search-overlay" class="search-overlay" aria-hidden="true">
+      <div class="search-modal">
+        <div class="search-modal-header">
+          <strong>全站搜索</strong>
+          <button id="search-close" class="search-close" type="button">关闭</button>
+        </div>
+        <form id="search-form" class="search-form" action="/zh/search/" method="get">
+          <input id="search-query" name="q" class="search-input" type="search" placeholder="输入关键词后回车" />
+        </form>
+        <section id="search-inline-results" class="search-inline-results"></section>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="affiliate-disclosure muted">部分链接为联盟推广链接，下单可能为我们带来佣金，不影响你的购买价格。</p>
+        <p>&copy; 出海好物 &middot; <a href="/zh/tags/">标签</a> &middot; <a href="/zh/rss.xml">RSS</a></p>
+      </div>
+    </footer>
+    
+    <script src="/assets/minisearch.umd.js" defer></script>
+    <script src="/assets/site.js" defer></script>
+    
+  </body>
+</html>

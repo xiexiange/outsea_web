@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Outsea Picks</title>
+    <link>https://example.com/ja/</link>
+    <description>海外向けおすすめ商品レビューとアフィリエイト厳選</description>
+    <item>
+  <title>海外旅行向けモバイルバッテリー選び（2026）</title>
+  <link>https://example.com/ja/posts/portable-charger-2026/</link>
+  <guid>https://example.com/ja/posts/portable-charger-2026/</guid>
+  <pubDate>Thu, 21 May 2026 10:00:00 GMT</pubDate>
+  <description>機内持ち込みを意識した容量・端子・重量のチェックポイントとおすすめ例。</description>
+</item>
+  </channel>
+</rss>

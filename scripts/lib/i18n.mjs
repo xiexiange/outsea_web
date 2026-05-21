@@ -1,0 +1,100 @@
+/** UI strings per locale (site chrome, not article body). */
+export const UI = {
+  en: {
+    articleList: 'Articles',
+    noArticles: 'No articles yet',
+    search: 'Search',
+    searchSite: 'Search site',
+    close: 'Close',
+    searchPlaceholder: 'Keywords, then Enter',
+    home: 'Home',
+    tags: 'Tags',
+    allTags: 'All tags',
+    noTags: 'No tags',
+    tagArchive: 'Tag',
+    relatedPosts: 'Related picks',
+    prevNext: 'Previous / next',
+    readingMin: 'min read',
+    featured: 'Featured pick',
+    searchPageTitle: 'Search results',
+    searchPageDesc: 'Fuzzy match on title, summary, tags, and body.',
+    backHome: 'Back to home',
+    emptyTag: 'No articles under this tag',
+    affiliateNotice:
+      'Some links are affiliate links. We may earn a commission at no extra cost to you.',
+    productCta: 'View deal',
+    productPrice: 'Price',
+    productRating: 'Rating',
+    language: 'Language',
+    encrypted: 'Encrypted',
+    unlock: 'Unlock to read',
+  },
+  zh: {
+    articleList: '文章列表',
+    noArticles: '暂无文章',
+    search: '搜索',
+    searchSite: '全站搜索',
+    close: '关闭',
+    searchPlaceholder: '输入关键词后回车',
+    home: '首页',
+    tags: '标签',
+    allTags: '全部标签',
+    noTags: '暂无标签',
+    tagArchive: '标签',
+    relatedPosts: '相关推荐',
+    prevNext: '上一篇 / 下一篇',
+    readingMin: '分钟阅读',
+    featured: '推荐阅读',
+    searchPageTitle: '搜索结果',
+    searchPageDesc: '支持标题、摘要、标签、正文模糊匹配。',
+    backHome: '返回首页',
+    emptyTag: '该标签下暂无文章',
+    affiliateNotice: '部分链接为联盟推广链接，下单可能为我们带来佣金，不影响你的购买价格。',
+    productCta: '查看优惠',
+    productPrice: '参考价',
+    productRating: '评分',
+    language: '语言',
+    encrypted: '加密',
+    unlock: '解锁阅读',
+  },
+  ja: {
+    articleList: '記事一覧',
+    noArticles: '記事がありません',
+    search: '検索',
+    searchSite: 'サイト内検索',
+    close: '閉じる',
+    searchPlaceholder: 'キーワードを入力して Enter',
+    home: 'ホーム',
+    tags: 'タグ',
+    allTags: 'すべてのタグ',
+    noTags: 'タグがありません',
+    tagArchive: 'タグ',
+    relatedPosts: '関連記事',
+    prevNext: '前へ / 次へ',
+    readingMin: '分で読める',
+    featured: 'おすすめ',
+    searchPageTitle: '検索結果',
+    searchPageDesc: 'タイトル・要約・タグ・本文のあいまい検索。',
+    backHome: 'ホームへ',
+    emptyTag: 'このタグの記事はありません',
+    affiliateNotice:
+      '一部リンクはアフィリエイトです。追加費用なしで当サイトに報酬が発生する場合があります。',
+    productCta: '詳細を見る',
+    productPrice: '価格',
+    productRating: '評価',
+    language: '言語',
+    encrypted: '暗号化',
+    unlock: '解除して読む',
+  },
+};
+
+export function getUi(locale) {
+  return UI[locale] || UI.en;
+}
+
+export function localePath(locale, pathname = '/') {
+  const loc = String(locale || 'en').trim() || 'en';
+  const p = pathname.startsWith('/') ? pathname : `/${pathname}`;
+  if (p === '/') return `/${loc}/`;
+  return `/${loc}${p}`;
+}
