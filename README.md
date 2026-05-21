@@ -89,6 +89,78 @@ dist/
     sitemap.xml
 ```
 
+## 部署到 Cloudflare Pages（GitHub 自动构建）
+
+推荐方式：代码在 GitHub，由 Cloudflare 在每次 push 时自动 `npm run build` 并发布 `dist/`。
+
+### 1. 推送仓库
+
+仓库示例：`https://github.com/xiexiange/outsea_web`（确保 `main` 分支已推送最新代码）。
+
+`dist/` 已在 `.gitignore` 中，**不要**把构建产物提交到 Git，交给 Cloudflare 构建。
+
+### 2. 在 Cloudflare 创建 Pages 项目
+
+1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create**
+2. 选 **Pages** → **Connect to Git**
+3. 授权 GitHub，选择仓库 `outsea_web`
+4. 构建设置：
+
+| 项 | 值 |
+|----|-----|
+| Production branch | `main` |
+| Framework preset | **None** |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | `/`（仓库根目录，留空即可） |
+
+5. **Environment variables**（可选但建议）：
+
+| 变量名 | 值 |
+|--------|-----|
+| `NODE_VERSION` | `20` |
+
+6. 点 **Save and Deploy**，等待首次构建成功。
+
+### 3. 自定义域名（可选）
+
+Pages 项目 → **Custom domains** → 添加你的域名（域名需在 Cloudflare DNS 或按提示改 NS）。
+
+### 4. 上线前改站点 URL
+
+编辑 `site.config.json`，把 `siteUrl` 改成正式地址，例如：
+
+```json
+"siteUrl": "https://your-domain.com"
+```
+
+提交并 push 后，Cloudflare 会重新构建，RSS / sitemap / canonical 才会正确。
+
+### 5. 路由说明
+
+构建会生成 `dist/_redirects`，Cloudflare Pages 会自动识别：
+
+- `/` → `/en/`（或你在 `defaultLocale` 里配置的语言）
+- `/en`、`/zh`、`/ja` 补全尾部斜杠
+
+文章链接请使用目录形式：`/en/posts/slug/`（与本地构建一致）。
+
+### 6. 常见问题
+
+| 现象 | 处理 |
+|------|------|
+| 构建失败 `npm ci` / 依赖 | 确认仓库根目录有 `package-lock.json`，Build 使用 `npm run build` |
+| 页面 404 | 检查 **Build output** 是否为 `dist`（不是 `/dist` 或 `build`） |
+| 只有首页、子路径 404 | 确认已部署最新构建（含 `_redirects`）；访问带尾部 `/` 的 URL |
+| 预览环境 | 每个 PR 会有 `*.pages.dev` 预览子域，可在 Pages 设置里开关 |
+
+### 其他方式（了解即可）
+
+- **Wrangler CLI**：本地 `npx wrangler pages deploy dist`，适合手动发布，不连 Git。
+- **GitHub Actions**：自己写 workflow 构建再上传；一般不如 Cloudflare 直连 Git 省事。
+
+---
+
 ## 部署（宝塔 / Nginx）
 
 1. 本地 `npm run build`

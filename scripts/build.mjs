@@ -640,4 +640,12 @@ await writeFile(
   'utf8'
 );
 
+const defaultLocale = baseConfig.defaultLocale || 'en';
+const redirectLines = [
+  `/ /${defaultLocale}/ 302`,
+  ...localeList.map((loc) => `/${loc} /${loc}/ 302`),
+  '',
+].join('\n');
+await writeFile(path.resolve(DIST_DIR, '_redirects'), redirectLines, 'utf8');
+
 console.log(`built: ${totalPosts} post(s) across ${localeList.length} locale(s) -> dist/`);
