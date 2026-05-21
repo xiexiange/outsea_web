@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/ja/</loc>
+    <loc>idove.dpdns.org/ja/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/ja/search/</loc>
+    <loc>idove.dpdns.org/ja/search/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://example.com/ja/tags/</loc>
+    <loc>idove.dpdns.org/ja/tags/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/ja/posts/portable-charger-2026/</loc>
+    <loc>idove.dpdns.org/ja/posts/dyson-vacuum-guide-2026/</loc>
     <lastmod>2026-05-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/ja/tags/deals/</loc>
+    <loc>idove.dpdns.org/ja/tags/deals/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://example.com/ja/tags/guides/</loc>
+    <loc>idove.dpdns.org/ja/tags/guides/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>idove.dpdns.org/ja/tags/home/</loc>
     <priority>0.5</priority>
   </url>
 </urlset>

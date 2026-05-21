@@ -14,6 +14,22 @@ const ADMONITION_BY_LOCALE = {
   ja: { tip: 'ヒント', warning: '注意', danger: '危険', info: '情報', note: 'メモ' },
 };
 
+function ratingStarsHtml(ratingText) {
+  const m = String(ratingText).match(/([\d.]+)/);
+  if (!m) return '';
+  const value = Math.min(5, Math.max(0, parseFloat(m[1])));
+  const full = Math.floor(value);
+  const half = value - full >= 0.45 ? 1 : 0;
+  const empty = 5 - full - half;
+  const star = (type) =>
+    `<span class="product-star product-star--${type}" aria-hidden="true"></span>`;
+  return (
+    star('full').repeat(full) +
+    (half ? star('half') : '') +
+    star('empty').repeat(empty)
+  );
+}
+
 function parseProductBlock(code, locale, postSlug) {
   const meta = {};
   for (const line of String(code || '').trim().split('\n')) {
@@ -26,6 +42,7 @@ function parseProductBlock(code, locale, postSlug) {
   const url = meta.url || '#';
   const rating = meta.rating || '';
   const note = meta.note || meta.pros || '';
+  const badge = meta.badge || '';
   let imgSrc = '';
   if (meta.image) {
     const img = meta.image;
@@ -33,16 +50,26 @@ function parseProductBlock(code, locale, postSlug) {
       ? img
       : `/${locale}/posts/${encodeURIComponent(postSlug || '')}/${img.replace(/^\.\//, '')}`;
   }
-  return `<div class="product-card">
-  ${imgSrc ? `<a class="product-card-image" href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank"><img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(title)}" loading="lazy" /></a>` : ''}
-  <div class="product-card-body">
+
+  const mediaInner = imgSrc
+    ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(title)}" loading="lazy" />`
+    : `<span class="product-card-placeholder" aria-hidden="true"></span>`;
+
+  const stars = rating ? ratingStarsHtml(rating) : '';
+
+  return `<aside class="product-card">
+  <a class="product-card-media" href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank">${mediaInner}</a>
+  <div class="product-card-content">
+    ${badge ? `<span class="product-card-badge">${escapeHtml(badge)}</span>` : ''}
     <h3 class="product-card-title"><a href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank">${escapeHtml(title)}</a></h3>
-    ${price ? `<p class="product-card-price"><span class="label">${escapeHtml(ui.productPrice)}</span> ${escapeHtml(price)}</p>` : ''}
-    ${rating ? `<p class="product-card-rating"><span class="label">${escapeHtml(ui.productRating)}</span> ${escapeHtml(rating)}</p>` : ''}
-    ${note ? `<p class="product-card-note muted">${escapeHtml(note)}</p>` : ''}
-    <a class="product-card-cta" href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank">${escapeHtml(ui.productCta)}</a>
+    <div class="product-card-meta">
+      ${price ? `<div class="product-card-price"><span class="meta-label">${escapeHtml(ui.productPrice)}</span><span class="meta-value">${escapeHtml(price)}</span></div>` : ''}
+      ${rating ? `<div class="product-card-rating"><span class="meta-label">${escapeHtml(ui.productRating)}</span><span class="meta-value">${stars}<span class="rating-text">${escapeHtml(rating)}</span></span></div>` : ''}
+    </div>
+    ${note ? `<p class="product-card-note">${escapeHtml(note)}</p>` : ''}
+    <a class="product-card-cta" href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank"><span>${escapeHtml(ui.productCta)}</span></a>
   </div>
-</div>`;
+</aside>`;
 }
 
 const SHIKI_LANGS = [
@@ -129,7 +156,7 @@ export async function createMarkdownRenderer(locale = 'en') {
     typographer: true,
     highlight(code, lang) {
       if (lang === 'product') {
-        return parseProductBlock(code, locale, activePostSlug);
+        return '';
       }
       if (lang === 'mermaid') {
         return `<pre class="mermaid">${md.utils.escapeHtml(code.trim())}</pre>`;
@@ -192,6 +219,18 @@ export async function createMarkdownRenderer(locale = 'en') {
       },
     });
   }
+
+  const defaultFence =
+    md.renderer.rules.fence ||
+    ((tokens, idx, options, env, slf) => slf.renderToken(tokens, idx, options, env, slf));
+  md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
+    const token = tokens[idx];
+    const info = token.info ? token.info.trim().toLowerCase() : '';
+    if (info === 'product') {
+      return parseProductBlock(token.content, locale, activePostSlug);
+    }
+    return defaultFence(tokens, idx, options, env, slf);
+  };
 
   return {
     md,
