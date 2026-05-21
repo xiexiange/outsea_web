@@ -14,6 +14,29 @@ const ADMONITION_BY_LOCALE = {
   ja: { tip: 'ヒント', warning: '注意', danger: '危険', info: '情報', note: 'メモ' },
 };
 
+/** Clarify JPY vs CNY in zh product prices (¥ alone is ambiguous). */
+function formatZhProductPrice(price) {
+  let s = String(price || '').trim();
+  if (!s || /日元|人民币/.test(s)) return s;
+
+  s = s.replace(
+    /¥\s*([\d,]+(?:\.\d+)?)\s*（约合\s*¥\s*([\d,]+(?:\.\d+)?)/g,
+    '$1 日元（约合 $2 元',
+  );
+  s = s.replace(/约合\s*¥\s*([\d,]+(?:\.\d+)?)/g, '约合 $1 元');
+  if (/^¥\s*[\d,]/.test(s)) {
+    s = s.replace(/^¥\s*([\d,]+(?:\.\d+)?)/, '$1 日元');
+  }
+  return s;
+}
+
+function formatProductPriceDisplay(price, locale) {
+  const raw = String(price || '').trim();
+  if (!raw) return '';
+  const text = locale === 'zh' ? formatZhProductPrice(raw) : raw;
+  return escapeHtml(text);
+}
+
 function ratingStarsHtml(ratingText) {
   const m = String(ratingText).match(/([\d.]+)/);
   if (!m) return '';
@@ -39,6 +62,7 @@ function parseProductBlock(code, locale, postSlug) {
   const ui = getUi(locale);
   const title = meta.title || 'Product';
   const price = meta.price || '';
+  const priceHtml = formatProductPriceDisplay(price, locale);
   const url = meta.url || '#';
   const rating = meta.rating || '';
   const note = meta.note || meta.pros || '';
@@ -63,7 +87,7 @@ function parseProductBlock(code, locale, postSlug) {
     ${badge ? `<span class="product-card-badge">${escapeHtml(badge)}</span>` : ''}
     <h3 class="product-card-title"><a href="${escapeHtml(url)}" rel="nofollow sponsored" target="_blank">${escapeHtml(title)}</a></h3>
     <div class="product-card-meta">
-      ${price ? `<div class="product-card-price"><span class="meta-label">${escapeHtml(ui.productPrice)}</span><span class="meta-value">${escapeHtml(price)}</span></div>` : ''}
+      ${priceHtml ? `<div class="product-card-price"><span class="meta-label">${escapeHtml(ui.productPrice)}</span><span class="meta-value">${priceHtml}</span></div>` : ''}
       ${rating ? `<div class="product-card-rating"><span class="meta-label">${escapeHtml(ui.productRating)}</span><span class="meta-value">${stars}<span class="rating-text">${escapeHtml(rating)}</span></span></div>` : ''}
     </div>
     ${note ? `<p class="product-card-note">${escapeHtml(note)}</p>` : ''}

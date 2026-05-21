@@ -56,7 +56,7 @@ description: 面向跨境与海外买家的戴森无线吸尘器选购指南：V
 ```product
 title: Dyson V15 Detect 无线吸尘器
 badge: 主推
-price: ¥103,370（约合 ¥5,034 / 约 $689）
+price: 103,370 日元（约合 5,034 元 / 约 $689）
 url: https://a.co/d/05ilPBSp
 rating: 4.7 / 5（品类参考，请以最新评价为准）
 note: 下单前请在商品页核对刷头、尘杯容量与当地保修。
@@ -69,7 +69,7 @@ note: 下单前请在商品页核对刷头、尘杯容量与当地保修。
 ```product
 title: Dyson V12 Detect Slim
 badge: 公寓首选
-price: ¥63,616（约合 ¥3,098 / 约 $424）
+price: 63,616 日元（约合 3,098 元 / 约 $424）
 url: https://a.co/d/066zXYEf
 rating: 4.6 / 5（品类参考，请以最新评价为准）
 note: 比 V15 轻；硬地激光显尘很实用。
@@ -80,7 +80,7 @@ note: 比 V15 轻；硬地激光显尘很实用。
 ```product
 title: Dyson V8 无线吸尘器
 badge: 性价比
-price: ¥68,381（约合 ¥3,330 / 约 $456）
+price: 68,381 日元（约合 3,330 元 / 约 $456）
 url: https://a.co/d/03V0bXRE
 rating: 4.5 / 5（品类参考，请以最新评价为准）
 note: 平台较老，但硬地、轻度使用仍靠谱；价格敏感时优先考虑。
