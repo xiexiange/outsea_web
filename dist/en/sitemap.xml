@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>idove.dpdns.org/en/</loc>
+    <loc>https://idove.dpdns.org/en/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/search/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>idove.dpdns.org/en/tags/</loc>
+    <loc>https://idove.dpdns.org/en/tags/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/privacy/</loc>
+    <loc>https://idove.dpdns.org/en/privacy/</loc>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/posts/robot-vacuum-under-500-2026/</loc>
+    <loc>https://idove.dpdns.org/en/posts/robot-vacuum-under-500-2026/</loc>
     <lastmod>2026-06-27</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/posts/portable-charger-2026/</loc>
+    <loc>https://idove.dpdns.org/en/posts/portable-charger-2026/</loc>
     <lastmod>2026-06-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/posts/dyson-hd17-hair-dryer-guide-2026/</loc>
+    <loc>https://idove.dpdns.org/en/posts/dyson-hd17-hair-dryer-guide-2026/</loc>
     <lastmod>2026-05-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/posts/dyson-vacuum-guide-2026/</loc>
+    <loc>https://idove.dpdns.org/en/posts/dyson-vacuum-guide-2026/</loc>
     <lastmod>2026-05-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/tags/deals/</loc>
+    <loc>https://idove.dpdns.org/en/tags/deals/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/tags/guides/</loc>
+    <loc>https://idove.dpdns.org/en/tags/guides/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/tags/home/</loc>
+    <loc>https://idove.dpdns.org/en/tags/home/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/en/tags/travel/</loc>
+    <loc>https://idove.dpdns.org/en/tags/travel/</loc>
     <priority>0.5</priority>
   </url>
 </urlset>

@@ -193,6 +193,20 @@ async function resolveIconMarkup(config) {
   }
 }
 
+async function copyPublicFiles() {
+  const publicDir = path.resolve(ROOT, 'public');
+  try {
+    await stat(publicDir);
+  } catch {
+    return;
+  }
+  const entries = await readdir(publicDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+    await copyFile(path.resolve(publicDir, entry.name), path.resolve(DIST_DIR, entry.name));
+  }
+}
+
 async function copyAssets() {
   await mkdir(path.resolve(DIST_DIR, 'assets'), { recursive: true });
   const styles = await readFile(path.resolve(ROOT, 'src', 'assets', 'styles.css'), 'utf8');
@@ -636,6 +650,7 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, pageTran
 await loadDotEnv(ROOT);
 await mkdir(DIST_DIR, { recursive: true });
 await copyAssets();
+await copyPublicFiles();
 
 const baseConfig = await loadSiteConfig();
 baseConfig.iconMarkup = await resolveIconMarkup(baseConfig);
