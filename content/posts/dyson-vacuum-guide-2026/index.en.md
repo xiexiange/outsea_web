@@ -59,6 +59,7 @@ badge: Top pick
 price: ¥103,370 (~US $689)
 url: https://a.co/d/05ilPBSp
 rating: 4.7 / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_v15.jpg
 note: Check the listing for included brush heads, bin size, and warranty in your region.
 ```
 
@@ -72,6 +73,7 @@ badge: Best for apartments
 price: ¥63,616 (~US $424)
 url: https://a.co/d/066zXYEf
 rating: 4.6 / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_v12.jpg
 note: Lighter than V15; laser dust detect shines on hard floor.
 ```
 
@@ -83,6 +85,7 @@ badge: Budget pick
 price: ¥68,381 (~US $456)
 url: https://a.co/d/03V0bXRE
 rating: 4.5 / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_v8.jpg
 note: Older platform but still credible for hard floor and light duty. Best when price is the main constraint.
 ```
 

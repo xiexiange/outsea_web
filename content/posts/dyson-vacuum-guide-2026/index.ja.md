@@ -57,6 +57,7 @@ badge: おすすめ
 price: ¥103,370（税込参考）
 url: https://a.co/d/05ilPBSp
 rating: 4.7 / 5（カテゴリ参考・最新レビューを確認）
+image: https://images.easy-vps.com/202606/dyson_v15.jpg
 note: 付属ヘッド・ダストビン容量・保証は商品ページで要確認。
 ```
 
@@ -70,6 +71,7 @@ badge: マンション向け
 price: ¥63,616（税込参考）
 url: https://a.co/d/066zXYEf
 rating: 4.6 / 5（カテゴリ参考）
+image: https://images.easy-vps.com/202606/dyson_v12.jpg
 note: V15 より軽い。硬い床のレーザー点灯に向く。
 ```
 
@@ -81,6 +83,7 @@ badge: コスパ
 price: ¥68,381（税込参考）
 url: https://a.co/d/03V0bXRE
 rating: 4.5 / 5（カテゴリ参考）
+image: https://images.easy-vps.com/202606/dyson_v8.jpg
 note: 旧世代だが硬い床・ライトユースには依然合理的。
 ```
 

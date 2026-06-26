@@ -57,6 +57,7 @@ badge: 主推
 price: 参考大陆建议零售价 ¥3,799；日亚 / 海外请以商品页为准
 url: https://www.amazon.co.jp/dp/B0CZN9Q23P
 rating: 4.5+ / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_hd17.jpg
 note: 下单前核对颜色套装、230V/110V 版本、风嘴数量与本地保修。国内称 HD17，海外可能标 Supersonic r™。
 ```
 
@@ -70,6 +71,7 @@ badge: 头皮友好
 price: 请以 Amazon / Dyson 官网当地价格为准
 url: https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8
 rating: 4.4+ / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_hd16.jpg
 note: 带头皮保护等智能模式；机身比 r™ 略大，购买前确认套装与电压。
 ```
 
@@ -81,6 +83,7 @@ badge: 性价比参考
 price: 请以 Amazon 商品页为准（常低于 r™ 首发价）
 url: https://www.amazon.com/Dyson-Supersonic-Nickel-Copper-Presentation/dp/B0B4T6RTZ2
 rating: 4.2+ / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_Supersonic.jpg
 note: 非 HD17 同款机身；配件生态成熟，适合「要戴森但不要最新 r 形态」。
 ```
 

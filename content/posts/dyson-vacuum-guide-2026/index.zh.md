@@ -59,6 +59,7 @@ badge: 主推
 price: 103,370 日元（约合 5,034 元 / 约 $689）
 url: https://a.co/d/05ilPBSp
 rating: 4.7 / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_v15.jpg
 note: 下单前请在商品页核对刷头、尘杯容量与当地保修。
 ```
 
@@ -72,6 +73,7 @@ badge: 公寓首选
 price: 63,616 日元（约合 3,098 元 / 约 $424）
 url: https://a.co/d/066zXYEf
 rating: 4.6 / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_v12.jpg
 note: 比 V15 轻；硬地激光显尘很实用。
 ```
 
@@ -83,6 +85,7 @@ badge: 性价比
 price: 68,381 日元（约合 3,330 元 / 约 $456）
 url: https://a.co/d/03V0bXRE
 rating: 4.5 / 5（品类参考，请以最新评价为准）
+image: https://images.easy-vps.com/202606/dyson_v8.jpg
 note: 平台较老，但硬地、轻度使用仍靠谱；价格敏感时优先考虑。
 ```
 

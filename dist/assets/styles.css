@@ -811,7 +811,7 @@ a.tag:hover {
 /* Product recommendation cards (not code blocks) */
 .prose .product-card {
   display: grid;
-  grid-template-columns: minmax(148px, 200px) 1fr;
+  grid-template-columns: minmax(180px, 280px) 1fr;
   gap: 0;
   margin: 28px 0;
   padding: 0;
@@ -826,19 +826,21 @@ a.tag:hover {
   text-decoration: none;
 }
 .prose .product-card-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: block;
+  align-self: stretch;
   min-height: 200px;
-  padding: 20px;
   background: linear-gradient(145deg, #eef2ff 0%, #f1f5f9 55%, #e2e8f0 100%);
   border-right: 1px solid #e8ecf1;
 }
 .prose .product-card-media img {
-  width: 100%;
-  max-height: 180px;
+  position: absolute;
+  inset: 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
   object-fit: contain;
-  border-radius: 8px;
+  object-position: center;
+  border-radius: 6px;
   display: block;
 }
 .prose .product-card-placeholder {
@@ -967,7 +969,7 @@ a.tag:hover {
     grid-template-columns: 1fr;
   }
   .prose .product-card-media {
-    min-height: 140px;
+    min-height: 200px;
     border-right: none;
     border-bottom: 1px solid #e8ecf1;
   }

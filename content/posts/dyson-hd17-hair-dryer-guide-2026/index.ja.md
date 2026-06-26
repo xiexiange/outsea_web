@@ -54,6 +54,7 @@ badge: おすすめ
 price: 地域により異なる（日本 Amazon 等で要確認）
 url: https://www.amazon.co.jp/dp/B0CZN9Q23P
 rating: 4.5+ / 5（カテゴリ参考）
+image: https://images.easy-vps.com/202606/dyson_hd17.jpg
 note: 色・同梱ノズル・230V/110V・保証地域を商品ページで確認。
 ```
 
@@ -67,6 +68,7 @@ badge: 頭皮向け
 price: Amazon 商品ページで確認
 url: https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8
 rating: 4.4+ / 5（カテゴリ参考）
+image: https://images.easy-vps.com/202606/dyson_hd16.jpg
 note: r™ とは形状が異なる。頭皮モード重視の方は比較を。
 ```
 
@@ -78,6 +80,7 @@ badge: コスパ参考
 price: Amazon で要確認
 url: https://www.amazon.com/Dyson-Supersonic-Nickel-Copper-Presentation/dp/B0B4T6RTZ2
 rating: 4.2+ / 5（カテゴリ参考）
+image: https://images.easy-vps.com/202606/dyson_Supersonic.jpg
 note: HD17 / r™ 本体ではない。旧世代でも十分な選択肢。
 ```
 

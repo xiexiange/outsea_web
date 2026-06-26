@@ -57,6 +57,7 @@ badge: Top pick
 price: Check Amazon / Dyson for your region (~US $550 MSRP on dyson.com)
 url: https://www.amazon.co.jp/dp/B0CZN9Q23P
 rating: 4.5+ / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_hd17.jpg
 note: Confirm color bundle, voltage (230V vs 110V), attachment count, and local warranty. Listed as HD17 in some Asian retailers.
 ```
 
@@ -70,6 +71,7 @@ badge: Scalp-friendly
 price: See Amazon listing for your country
 url: https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8
 rating: 4.4+ / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_hd16.jpg
 note: Intelligent modes for scalp-aware drying; slightly different form factor than r™.
 ```
 
@@ -81,6 +83,7 @@ badge: Budget pick
 price: See Amazon product page (often below r™ launch pricing)
 url: https://www.amazon.com/Dyson-Supersonic-Nickel-Copper-Presentation/dp/B0B4T6RTZ2
 rating: 4.2+ / 5 (category average; check latest reviews)
+image: https://images.easy-vps.com/202606/dyson_Supersonic.jpg
 note: Not the HD17 / r™ body; strong pick when you want Dyson without the newest chassis.
 ```
 
