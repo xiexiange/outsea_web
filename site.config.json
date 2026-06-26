@@ -1,10 +1,10 @@
 {
   "siteName": "Outsea Picks",
   "siteDescription": "Curated product recommendations for global shoppers",
-  "siteUrl": "idove.dpdns.org",
+  "siteUrl": "https://idove.dpdns.org",
   "defaultLocale": "en",
   "iconText": "OP",
-  "iconImage": "",
+  "iconImage": "/assets/icon.webp",
   "locales": {
     "en": {
       "label": "English",

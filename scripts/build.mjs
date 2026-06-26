@@ -27,6 +27,10 @@ import {
   renderLocaleSwitcher,
   renderPageContent,
   postJsonLd,
+  siteJsonLd,
+  buildLocaleHreflangGroup,
+  renderRobots,
+  normalizeSiteUrl,
 } from './lib/html.mjs';
 import { loadPagesForLocale, buildPageTranslationIndex, resolvePageUrl } from './lib/pages.mjs';
 import { encryptPayload } from './lib/encrypt.mjs';
@@ -130,7 +134,7 @@ async function loadSiteConfig() {
     return {
       siteName: String(parsed.siteName || defaults.siteName),
       siteDescription: String(parsed.siteDescription || defaults.siteDescription),
-      siteUrl: String(parsed.siteUrl || defaults.siteUrl),
+      siteUrl: normalizeSiteUrl(parsed.siteUrl || defaults.siteUrl),
       defaultLocale: String(parsed.defaultLocale || defaults.defaultLocale),
       locales:
         parsed.locales && typeof parsed.locales === 'object' ? parsed.locales : defaults.locales,
@@ -373,8 +377,9 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, pageTran
   await mkdir(path.resolve(localeDist, 'tags'), { recursive: true });
 
   const { tagToSlug, slugToTag } = buildTagRegistry(posts);
-  const siteBase = String(config.siteUrl || '').replace(/\/$/, '');
+  const siteBase = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const localeBase = `${siteBase}/${locale}`;
+  const homeHreflangHtml = renderHreflangLinks(config, buildLocaleHreflangGroup(config), '/');
 
   const globalSwitcher = renderLocaleSwitcher(config, new Map(), '/');
 
@@ -390,8 +395,10 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, pageTran
       localeSwitcherHtml: globalSwitcher,
       headExtra: {
         canonicalUrl: `${localeBase}/`,
+        hreflangHtml: homeHreflangHtml,
         ogType: 'website',
         ogImage: resolveOgImage(config, {}),
+        jsonLd: siteJsonLd(config),
       },
     }),
     'utf8'
@@ -406,7 +413,7 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, pageTran
       posts,
       activeSlug: '',
       contentHtml: renderSearchContent(config),
-      headExtra: { canonicalUrl: `${localeBase}/search/` },
+      headExtra: { canonicalUrl: `${localeBase}/search/`, robots: 'noindex, follow' },
     }),
     'utf8'
   );
@@ -681,6 +688,7 @@ await writeFile(
   renderSitemapIndex(baseConfig, localeList),
   'utf8'
 );
+await writeFile(path.resolve(DIST_DIR, 'robots.txt'), renderRobots(baseConfig), 'utf8');
 
 const defaultLocale = baseConfig.defaultLocale || 'en';
 const redirectLines = [

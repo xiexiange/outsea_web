@@ -9,6 +9,13 @@ export function escapeHtml(s) {
     .replaceAll("'", '&#39;');
 }
 
+export function normalizeSiteUrl(url) {
+  const s = String(url || '').trim().replace(/\/$/, '');
+  if (!s) return 'https://example.com';
+  if (s.startsWith('http://') || s.startsWith('https://')) return s;
+  return `https://${s}`;
+}
+
 export function slugify(input) {
   return String(input ?? '')
     .trim()
@@ -69,13 +76,13 @@ export function getRelatedPosts(post, allPosts, limit = 3) {
 }
 
 export function resolvePostUrl(config, slug) {
-  const base = String(config.siteUrl || '').replace(/\/$/, '');
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const loc = config.locale || 'en';
   return `${base}/${loc}/posts/${encodeURIComponent(slug)}/`;
 }
 
 export function resolveOgImage(config, post) {
-  const siteBase = String(config.siteUrl || '').replace(/\/$/, '');
+  const siteBase = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   if (post.coverUrl) {
     return post.coverUrl.startsWith('http')
       ? post.coverUrl
@@ -98,9 +105,17 @@ function navHref(config, url) {
   return lp(config, u.startsWith('/') ? u : `/${u}`);
 }
 
+export function buildLocaleHreflangGroup(config) {
+  const group = new Map();
+  for (const [loc, meta] of Object.entries(config.locales || {})) {
+    group.set(loc, { htmlLang: meta.htmlLang || loc });
+  }
+  return group;
+}
+
 export function renderHreflangLinks(config, translationGroup, canonicalPath) {
   if (!translationGroup?.size) return '';
-  const base = String(config.siteUrl || '').replace(/\/$/, '');
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const links = [];
   for (const [loc, entry] of translationGroup.entries()) {
     const href = `${base}/${loc}${canonicalPath}`;
@@ -144,11 +159,17 @@ export function renderHeadMeta({
   jsonLd = null,
   extraCss = [],
   hreflangHtml = '',
+  robots = '',
+  rssUrl = '',
 }) {
   const safeTitle = escapeHtml(title);
   const safeDesc = escapeHtml(description || '');
   const safeCanonical = canonicalUrl ? escapeHtml(canonicalUrl) : '';
   const safeOgImage = ogImage ? escapeHtml(ogImage) : '';
+  const robotsTag = robots ? `<meta name="robots" content="${escapeHtml(robots)}" />` : '';
+  const rssLink = rssUrl
+    ? `<link rel="alternate" type="application/rss+xml" href="${escapeHtml(rssUrl)}" title="${escapeHtml(config.siteName)} RSS" />`
+    : '';
 
   const ogTags = [
     `<meta property="og:type" content="${escapeHtml(ogType)}" />`,
@@ -183,8 +204,10 @@ export function renderHeadMeta({
 
   return `<title>${safeTitle}</title>
     <meta name="description" content="${safeDesc}" />
+    ${robotsTag}
     ${safeCanonical ? `<link rel="canonical" href="${safeCanonical}" />` : ''}
     ${hreflangHtml}
+    ${rssLink}
     ${iconLinks}
     ${ogTags}
     ${cssLinks}
@@ -270,6 +293,7 @@ export function layout({
     title,
     description,
     config,
+    rssUrl: lp(config, '/rss.xml'),
     ...headExtra,
     extraCss: [...(enableKatex ? ['/assets/katex.min.css'] : [])],
   });
@@ -514,7 +538,7 @@ export function renderTagArchiveContent(config, tagLabel, tagPosts) {
 }
 
 export function renderRss(posts, config) {
-  const channelLink = `${String(config.siteUrl || '').replace(/\/$/, '')}/${config.locale}/`;
+  const channelLink = `${normalizeSiteUrl(config.siteUrl).replace(/\/$/, '')}/${config.locale}/`;
   const items = posts
     .slice(0, 50)
     .map((p) => {
@@ -540,12 +564,11 @@ export function renderRss(posts, config) {
 }
 
 export function renderSitemap(config, posts, tagSlugs, pages = []) {
-  const base = String(config.siteUrl || '').replace(/\/$/, '');
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const loc = config.locale || 'en';
   const prefix = `${base}/${loc}`;
   const urls = [
     { loc: `${prefix}/`, priority: '1.0' },
-    { loc: `${prefix}/search/`, priority: '0.5' },
     { loc: `${prefix}/tags/`, priority: '0.6' },
     ...pages.map((p) => ({
       loc: `${prefix}/${encodeURIComponent(p.slug)}/`,
@@ -593,8 +616,17 @@ export function renderRootRedirect(defaultLocale) {
 </html>`;
 }
 
+export function renderRobots(config) {
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
+  return `User-agent: *
+Allow: /
+
+Sitemap: ${base}/sitemap.xml
+`;
+}
+
 export function renderSitemapIndex(config, localeList) {
-  const base = String(config.siteUrl || '').replace(/\/$/, '');
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const urls = localeList
     .map(
       (loc) => `  <sitemap>
@@ -620,5 +652,33 @@ export function postJsonLd(config, post) {
     keywords: post.tags.join(', '),
     image: resolveOgImage(config, post) || undefined,
     inLanguage: config.htmlLang || config.locale,
+  };
+}
+
+export function siteJsonLd(config) {
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
+  const loc = config.locale || 'en';
+  const siteUrl = `${base}/${loc}/`;
+  const ogImage = resolveOgImage(config, {});
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: config.siteName,
+    description: config.siteDescription || '',
+    url: siteUrl,
+    inLanguage: config.htmlLang || config.locale,
+    publisher: {
+      '@type': 'Organization',
+      name: config.siteName,
+      ...(ogImage ? { logo: ogImage } : {}),
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${base}/${loc}/search/?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }

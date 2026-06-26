@@ -1,7 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { slugify } from './html.mjs';
+import { slugify, normalizeSiteUrl } from './html.mjs';
 
 export async function loadPagesForLocale(locale, pagesDir, markdownRender) {
   let entries = [];
@@ -76,7 +76,7 @@ export function buildPageTranslationIndex(pagesByLocale, baseConfig) {
 }
 
 export function resolvePageUrl(config, slug) {
-  const base = String(config.siteUrl || '').replace(/\/$/, '');
+  const base = normalizeSiteUrl(config.siteUrl).replace(/\/$/, '');
   const loc = config.locale || 'en';
   return `${base}/${loc}/${encodeURIComponent(slug)}/`;
 }
