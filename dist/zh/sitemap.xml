@@ -17,6 +17,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>idove.dpdns.org/zh/posts/robot-vacuum-under-500-2026/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>idove.dpdns.org/zh/posts/portable-charger-2026/</loc>
     <lastmod>2026-06-26</lastmod>
     <priority>0.8</priority>
@@ -40,11 +45,11 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/zh/tags/travel/</loc>
+    <loc>idove.dpdns.org/zh/tags/home/</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>idove.dpdns.org/zh/tags/home/</loc>
+    <loc>idove.dpdns.org/zh/tags/travel/</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
