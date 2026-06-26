@@ -323,7 +323,7 @@ export function layout({
     <footer class="site-footer">
       <div class="container">
         <p class="affiliate-disclosure muted">${escapeHtml(ui.affiliateNotice)}</p>
-        <p>&copy; ${escapeHtml(config.siteName)} &middot; <a href="${escapeHtml(lp(config, '/tags/'))}">${escapeHtml(ui.tags)}</a> &middot; <a href="${escapeHtml(lp(config, '/rss.xml'))}">RSS</a></p>
+        <p>&copy; ${escapeHtml(config.siteName)} &middot; <a href="${escapeHtml(lp(config, '/privacy/'))}">${escapeHtml(ui.privacyPolicy)}</a> &middot; <a href="${escapeHtml(lp(config, '/tags/'))}">${escapeHtml(ui.tags)}</a> &middot; <a href="${escapeHtml(lp(config, '/rss.xml'))}">RSS</a></p>
       </div>
     </footer>
     ${renderEncryptedAccessScript(config)}
@@ -458,6 +458,17 @@ export function renderIndexContent(config, posts) {
 <section class="grid">${cards}</section>`;
 }
 
+export function renderPageContent(page, config) {
+  const ui = config.ui || getUi(config.locale);
+  return `<article class="prose">
+  <div class="breadcrumbs"><a href="${escapeHtml(lp(config, '/'))}">${escapeHtml(ui.home)}</a> / <span>${escapeHtml(page.title)}</span></div>
+  <h1>${escapeHtml(page.title)}</h1>
+  <div class="post-body">
+    <div class="content">${page.bodyHtml}</div>
+  </div>
+</article>`;
+}
+
 export function renderSearchContent(config) {
   const ui = config.ui || getUi(config.locale);
   return `<section class="hero">
@@ -528,7 +539,7 @@ export function renderRss(posts, config) {
 </rss>`;
 }
 
-export function renderSitemap(config, posts, tagSlugs) {
+export function renderSitemap(config, posts, tagSlugs, pages = []) {
   const base = String(config.siteUrl || '').replace(/\/$/, '');
   const loc = config.locale || 'en';
   const prefix = `${base}/${loc}`;
@@ -536,6 +547,10 @@ export function renderSitemap(config, posts, tagSlugs) {
     { loc: `${prefix}/`, priority: '1.0' },
     { loc: `${prefix}/search/`, priority: '0.5' },
     { loc: `${prefix}/tags/`, priority: '0.6' },
+    ...pages.map((p) => ({
+      loc: `${prefix}/${encodeURIComponent(p.slug)}/`,
+      priority: '0.4',
+    })),
     ...posts.map((p) => ({
       loc: `${prefix}/posts/${encodeURIComponent(p.slug)}/`,
       lastmod: p.date ? p.date.toISOString().slice(0, 10) : null,

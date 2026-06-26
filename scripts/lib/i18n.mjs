@@ -22,6 +22,7 @@ export const UI = {
     emptyTag: 'No articles under this tag',
     affiliateNotice:
       'Some links are affiliate links. We may earn a commission at no extra cost to you.',
+    privacyPolicy: 'Privacy Policy',
     productCta: 'View deal',
     productPrice: 'Price',
     productRating: 'Rating',
@@ -50,6 +51,7 @@ export const UI = {
     backHome: '返回首页',
     emptyTag: '该标签下暂无文章',
     affiliateNotice: '部分链接为联盟推广链接，下单可能为我们带来佣金，不影响你的购买价格。',
+    privacyPolicy: '隐私政策',
     productCta: '查看优惠',
     productPrice: '参考价',
     productRating: '评分',
@@ -79,6 +81,7 @@ export const UI = {
     emptyTag: 'このタグの記事はありません',
     affiliateNotice:
       '一部リンクはアフィリエイトです。追加費用なしで当サイトに報酬が発生する場合があります。',
+    privacyPolicy: 'プライバシーポリシー',
     productCta: '詳細を見る',
     productPrice: '価格',
     productRating: '評価',

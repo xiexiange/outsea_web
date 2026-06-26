@@ -25,8 +25,10 @@ import {
   renderSitemapIndex,
   renderHreflangLinks,
   renderLocaleSwitcher,
+  renderPageContent,
   postJsonLd,
 } from './lib/html.mjs';
+import { loadPagesForLocale, buildPageTranslationIndex, resolvePageUrl } from './lib/pages.mjs';
 import { encryptPayload } from './lib/encrypt.mjs';
 import { isEncryptedPost, loadEncryptedRules } from './lib/encrypted.mjs';
 import { loadDotEnv } from './lib/dotenv.mjs';
@@ -34,6 +36,7 @@ import { getUi } from './lib/i18n.mjs';
 
 const ROOT = process.cwd();
 const CONTENT_DIR = path.resolve(ROOT, 'content', 'posts');
+const PAGES_DIR = path.resolve(ROOT, 'content', 'pages');
 const DIST_DIR = path.resolve(ROOT, 'dist');
 const SITE_CONFIG_PATH = path.resolve(ROOT, 'site.config.json');
 
@@ -357,7 +360,7 @@ function getTranslationGroup(translationIndex, translationKey) {
   return translationIndex.get(translationKey) || new Map();
 }
 
-async function buildLocale(locale, baseConfig, posts, translationIndex, encryptKey) {
+async function buildLocale(locale, baseConfig, posts, translationIndex, pageTranslationIndex, pages, encryptKey) {
   const config = mergeLocaleConfig(baseConfig, locale);
   config.iconMarkup = baseConfig.iconMarkup;
   config.encryptedSlugs = new Set(posts.filter((p) => p.encrypted).map((p) => p.slug));
@@ -447,6 +450,36 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, encryptK
         activeSlug: '',
         contentHtml: renderTagArchiveContent(config, label, tagPosts),
         headExtra: { canonicalUrl: `${localeBase}/tags/${encodeURIComponent(slug)}/` },
+      }),
+      'utf8'
+    );
+  }
+
+  for (const page of pages) {
+    const outDir = path.resolve(localeDist, page.slug);
+    await mkdir(outDir, { recursive: true });
+    const canonicalUrl = resolvePageUrl(config, page.slug);
+    const pagePath = `/${encodeURIComponent(page.slug)}/`;
+    const translationGroup = pageTranslationIndex.get(page.translationKey) || new Map();
+    const hreflangHtml = renderHreflangLinks(config, translationGroup, pagePath);
+    const localeSwitcherHtml = renderLocaleSwitcher(config, translationGroup, pagePath);
+
+    await writeFile(
+      path.resolve(outDir, 'index.html'),
+      layout({
+        title: `${page.title} · ${config.siteName}`,
+        description: page.description || page.title,
+        config,
+        posts,
+        activeSlug: '',
+        contentHtml: renderPageContent(page, config),
+        localeSwitcherHtml,
+        headExtra: {
+          canonicalUrl,
+          hreflangHtml,
+          ogType: 'website',
+          ogImage: resolveOgImage(config, {}),
+        },
       }),
       'utf8'
     );
@@ -571,7 +604,7 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, encryptK
   await writeFile(path.resolve(localeDist, 'rss.xml'), renderRss(rssPosts, config), 'utf8');
   await writeFile(
     path.resolve(localeDist, 'sitemap.xml'),
-    renderSitemap(config, posts, [...slugToTag.keys()]),
+    renderSitemap(config, posts, [...slugToTag.keys()], pages),
     'utf8'
   );
   await writeFile(
@@ -590,7 +623,7 @@ async function buildLocale(locale, baseConfig, posts, translationIndex, encryptK
     'utf8'
   );
 
-  return { postCount: posts.length, tagCount: tagEntries.length };
+  return { postCount: posts.length, tagCount: tagEntries.length, pageCount: pages.length };
 }
 
 await loadDotEnv(ROOT);
@@ -609,24 +642,33 @@ if (encryptRules.authApiUrl && !encryptKey) {
 }
 
 const postsByLocale = {};
+const pagesByLocale = {};
 for (const locale of localeList) {
   const markdownRenderer = await createMarkdownRenderer(locale);
   postsByLocale[locale] = await loadPostsForLocale(locale, markdownRenderer.render, encryptRules);
+  pagesByLocale[locale] = await loadPagesForLocale(locale, PAGES_DIR, markdownRenderer.render);
 }
 
 const translationIndex = buildTranslationIndex(postsByLocale, baseConfig);
+const pageTranslationIndex = buildPageTranslationIndex(pagesByLocale, baseConfig);
 
 let totalPosts = 0;
+let totalPages = 0;
 for (const locale of localeList) {
   const stats = await buildLocale(
     locale,
     baseConfig,
     postsByLocale[locale] || [],
     translationIndex,
+    pageTranslationIndex,
+    pagesByLocale[locale] || [],
     encryptKey
   );
   totalPosts += stats.postCount;
-  console.log(`  [${locale}] ${stats.postCount} post(s), ${stats.tagCount} tag(s)`);
+  totalPages += stats.pageCount;
+  console.log(
+    `  [${locale}] ${stats.postCount} post(s), ${stats.pageCount} page(s), ${stats.tagCount} tag(s)`
+  );
 }
 
 await writeFile(
@@ -648,4 +690,4 @@ const redirectLines = [
 ].join('\n');
 await writeFile(path.resolve(DIST_DIR, '_redirects'), redirectLines, 'utf8');
 
-console.log(`built: ${totalPosts} post(s) across ${localeList.length} locale(s) -> dist/`);
+console.log(`built: ${totalPosts} post(s), ${totalPages} page(s) across ${localeList.length} locale(s) -> dist/`);
