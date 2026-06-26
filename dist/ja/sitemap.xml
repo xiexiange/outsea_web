@@ -13,6 +13,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://idove.dpdns.org/ja/posts/air-purifier-small-apartment-2026/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://idove.dpdns.org/ja/posts/robot-vacuum-under-500-2026/</loc>
     <lastmod>2026-06-27</lastmod>
     <priority>0.8</priority>
@@ -42,6 +47,10 @@
   </url>
   <url>
     <loc>https://idove.dpdns.org/ja/tags/home/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/ja/tags/health/</loc>
     <priority>0.5</priority>
   </url>
   <url>
