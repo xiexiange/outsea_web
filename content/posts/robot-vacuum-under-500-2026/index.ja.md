@@ -1,6 +1,6 @@
 ---
 title: 5万円以下おすすめロボット掃除機（2026）— Roborock / Shark / eufy 比較
-date: 2026-06-27 10:00:00
+date: 2026-05-30 10:00:00
 published: true
 translationKey: robot-vacuum-under-500-2026
 slug: robot-vacuum-under-500-2026

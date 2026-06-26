@@ -1,6 +1,6 @@
 ---
 title: 小さな部屋向け空気清浄機おすすめ（2026）— Levoit vs Dyson
-date: 2026-06-28 10:00:00
+date: 2026-06-04 10:00:00
 published: true
 translationKey: air-purifier-small-apartment-2026
 slug: air-purifier-small-apartment-2026
@@ -39,13 +39,13 @@ description: ワンルーム・1LDK 向けに Levoit Core 300-P、Core 600S-P、
 **眠る・在宅ワークする部屋** に合わせて選びましょう。契約書上の総面積ではなく、実際に運転する空間が基準です。
 :::
 
-## 3 つの tier（価格差を大きく）
+## 3 つの tier（早見）
 
 **バジェット寝室 HEPA** — Levoit Core 300-P **約 $80**：コンパクト円柱、AHAM VERIFIDE、Sleep **22 dB** 級、WiFi なし。
 
 **スマート主力** — **Levoit Core 600S-P** **約 $250**：レーザー PM2.5、Auto、WiFi/Alexa、高 CADR。ワンルームの第一候補。
 
-**プレミアム空清＋ファン** — **Dyson Purifier Cool TP07** **約 $650**：HEPA + **350° 首振り**、LCD、MyDyson。**約 8 倍**の価格差——デザインと送風一体が欲しい人向け。
+**プレミアム空清＋ファン** — **Dyson Purifier Cool TP07** **約 $650**：HEPA + **350° 首振り**、LCD、MyDyson。デザインと送風一体が欲しい人向け——安さ最優先なら見送り。
 
 ## おすすめ（一般的な第一候補）
 

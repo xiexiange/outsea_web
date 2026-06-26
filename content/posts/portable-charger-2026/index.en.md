@@ -1,6 +1,6 @@
 ---
 title: Best Portable Chargers for Travel (2026) — Anker vs Belkin vs Apple MagSafe
-date: 2026-06-26 10:00:00
+date: 2026-05-25 10:00:00
 published: true
 translationKey: portable-charger-2026
 slug: portable-charger-2026

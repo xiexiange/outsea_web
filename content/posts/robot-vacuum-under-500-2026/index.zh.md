@@ -1,6 +1,6 @@
 ---
 title: 500 美元以内扫地机器人怎么选（2026）— Roborock / Shark / eufy 对比
-date: 2026-06-27 10:00:00
+date: 2026-05-30 10:00:00
 published: true
 translationKey: robot-vacuum-under-500-2026
 slug: robot-vacuum-under-500-2026

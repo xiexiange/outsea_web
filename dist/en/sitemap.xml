@@ -13,18 +13,43 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://idove.dpdns.org/en/posts/kitchen-trash-bags-2026/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/posts/kindle-vs-ipad-reading-2026/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/posts/pet-hair-removal-tools-2026/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/posts/kitchen-gadgets-under-50-2026/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/posts/carry-on-luggage-2026/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://idove.dpdns.org/en/posts/air-purifier-small-apartment-2026/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://idove.dpdns.org/en/posts/robot-vacuum-under-500-2026/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://idove.dpdns.org/en/posts/portable-charger-2026/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -38,10 +63,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://idove.dpdns.org/en/tags/deals/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://idove.dpdns.org/en/tags/guides/</loc>
     <priority>0.5</priority>
   </url>
@@ -50,11 +71,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://idove.dpdns.org/en/tags/health/</loc>
+    <loc>https://idove.dpdns.org/en/tags/deals/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/tags/pets/</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://idove.dpdns.org/en/tags/travel/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://idove.dpdns.org/en/tags/health/</loc>
     <priority>0.5</priority>
   </url>
 </urlset>

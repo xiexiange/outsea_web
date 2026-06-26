@@ -1,6 +1,6 @@
 ---
 title: Best Robot Vacuums Under $500 (2026) — Roborock vs Shark vs eufy
-date: 2026-06-27 10:00:00
+date: 2026-05-30 10:00:00
 published: true
 translationKey: robot-vacuum-under-500-2026
 slug: robot-vacuum-under-500-2026

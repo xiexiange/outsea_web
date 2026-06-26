@@ -1,6 +1,6 @@
 ---
 title: 小公寓空气净化器怎么选（2026）— Levoit vs Dyson 三档对比
-date: 2026-06-28 10:00:00
+date: 2026-06-04 10:00:00
 published: true
 translationKey: air-purifier-small-apartment-2026
 slug: air-purifier-small-apartment-2026
@@ -9,7 +9,7 @@ tags:
   - guides
   - home
   - health
-description: 面向小公寓与跨境买家的空气净化器选购指南：Levoit Core 300-P、Core 600S-P 与 Dyson TP07 三档价差对比，适合谁、滤网成本与 Amazon 购买链接。
+description: 面向小公寓与跨境买家的空气净化器选购指南：Levoit Core 300-P、Core 600S-P 与 Dyson TP07 三档对比，适合谁、滤网成本与 Amazon 购买链接。
 ---
 
 小公寓选净化器，关键不是 CADR 数字越大越好，而是**房间大小、睡眠噪音、滤网长期成本**是否匹配。2026 年你可以花 **约 $80** 买卧室级 HEPA，**约 $250** 买带 PM2.5 自动档的主力款，或 **约 $650** 买戴森净化+塔扇一体机。如果你习惯在美亚比价、有宠物或开放式厨房，这篇只谈**适不适合**，不堆营销参数。
@@ -39,7 +39,7 @@ description: 面向小公寓与跨境买家的空气净化器选购指南：Levo
 按**你睡觉或办公的那间房**选型，不要按整租合同上的总面积。一台放对位置的机器，胜过一台「全屋」却偏小的机器。
 :::
 
-## 三档怎么理解（价差刻意拉大）
+## 三档怎么理解
 
 **入门卧室 HEPA** — Levoit Core 300-P **约 $80**：圆柱紧凑、AHAM 认证、Sleep Mode 低至 **22 dB**、无 WiFi。适合单卧室或书房，不需要智能联动。
 

@@ -1,6 +1,6 @@
 ---
 title: 旅行充电宝怎么选（2026）— Anker / Belkin / Apple MagSafe 对比
-date: 2026-06-26 10:00:00
+date: 2026-05-25 10:00:00
 published: true
 translationKey: portable-charger-2026
 slug: portable-charger-2026

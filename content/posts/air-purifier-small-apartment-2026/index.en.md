@@ -1,6 +1,6 @@
 ---
 title: Best Air Purifiers for Small Apartments (2026) — Levoit vs Dyson
-date: 2026-06-28 10:00:00
+date: 2026-06-04 10:00:00
 published: true
 translationKey: air-purifier-small-apartment-2026
 slug: air-purifier-small-apartment-2026
