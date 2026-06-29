@@ -55,7 +55,7 @@ If you want **one sub-$500 robot** that vacuums, mops hard floor reasonably well
 title: roborock Q10 S5+ Robot Vacuum and Mop
 badge: Top pick
 price: US $479.99
-url: https://www.amazon.com/dp/B0DWXBCQVP
+url: https://www.amazon.com/dp/B0DWXBCQVP?tag=idovepicks-20
 rating: 4.0 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/robot_roborock_q10.jpg
 note: Model Q10 S5+ — 10,000Pa suction, self-empty dock (~7 weeks), VibraRise 2.0 sonic mop, auto mop lifting on carpet, LiDAR navigation, dual anti-tangle design. Successor to Q8 Max+.
@@ -69,7 +69,7 @@ note: Model Q10 S5+ — 10,000Pa suction, self-empty dock (~7 weeks), VibraRise 
 title: Shark AV2501S AI Ultra Robot Vacuum
 badge: Best budget self-empty
 price: US $249.99
-url: https://www.amazon.com/dp/B09H8CWFNK
+url: https://www.amazon.com/dp/B09H8CWFNK?tag=idovepicks-20
 rating: 4.0 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/robot_shark_ai.jpg
 note: Model AV2501S — LiDAR navigation, Matrix Clean grid passes, bagless 30-day self-empty HEPA base, self-cleaning brushroll for pet hair. Vacuum-only — no mop.
@@ -83,7 +83,7 @@ note: Model AV2501S — LiDAR navigation, Matrix Clean grid passes, bagless 30-d
 title: eufy C10 Robot Vacuum (Self-Emptying)
 badge: Best for low clearance
 price: US $239.99
-url: https://www.amazon.com/dp/B0DR7W6CZM
+url: https://www.amazon.com/dp/B0DR7W6CZM?tag=idovepicks-20
 rating: 3.7 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/robot_eufy_c10.jpg
 note: Model T2292 — 2.85-inch ultra-slim body, LiDAR mapping, self-empty station (~8 weeks), CornerRover edge brush, 4,000Pa suction. Vacuum-only.

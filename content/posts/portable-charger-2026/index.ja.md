@@ -54,7 +54,7 @@ description: 海外向けに旅行用モバイルバッテリー（Anker 20K 87W
 title: Anker Power Bank 20K（87W、内蔵 USB-C ケーブル）
 badge: おすすめ
 price: 約 US $47（Amazon ページで要確認）
-url: https://www.amazon.com/dp/B0CXDXP8VR
+url: https://www.amazon.com/dp/B0CXDXP8VR?tag=idovepicks-20
 rating: 4.6 / 5（カテゴリ参考・最新レビューを確認）
 image: https://images.easy-vps.com/202606/charger_anker.jpg
 note: 型番 A1383 — 20,000mAh、USB-C 単ポート最大 65W、3 ポート合計 87W。内蔵ケーブル + USB-C×1 + USB-A×1。約 440g。65W アダプターで約 1.5 時間で満充電。
@@ -68,7 +68,7 @@ note: 型番 A1383 — 20,000mAh、USB-C 単ポート最大 65W、3 ポート合
 title: Belkin BoostCharge 10K（内蔵 USB-C ケーブル）
 badge: 軽量旅行向け
 price: 約 US $19（Amazon ページで要確認）
-url: https://www.amazon.com/dp/B0DFYCSRB2
+url: https://www.amazon.com/dp/B0DFYCSRB2?tag=idovepicks-20
 rating: 4.5 / 5（カテゴリ参考）
 image: https://images.easy-vps.com/202606/charger_belkin.jpg
 note: 型番 BPB021 — 10,000mAh、内蔵ケーブルまたは第 2 USB-C で 20W PD。215g 未満。2 ポート同時使用時は合計 15W 共有。2 年保証。
@@ -82,7 +82,7 @@ note: 型番 BPB021 — 10,000mAh、内蔵ケーブルまたは第 2 USB-C で 2
 title: Apple iPhone Air MagSafe Battery
 badge: MagSafe 向け
 price: 約 US $59（Amazon ページで要確認）
-url: https://www.amazon.com/dp/B0FQFH9BST
+url: https://www.amazon.com/dp/B0FQFH9BST?tag=idovepicks-20
 rating: 4.4 / 5（カテゴリ参考）
 image: https://images.easy-vps.com/202606/charger_magsafe.jpg
 note: iPhone Air 専用 — 磁吸ワイヤレス最大約 12W、Apple 公式で最大約 65% 追加バッテリー。汎用パワーバンクではない。充電器・ケーブル別売。

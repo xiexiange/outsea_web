@@ -7,6 +7,7 @@ import { katex } from '@mdit/plugin-katex';
 import { createHighlighter } from 'shiki';
 import { escapeHtml } from './html.mjs';
 import { getUi } from './i18n.mjs';
+import { applyAmazonAffiliateTag, applyAffiliateTagsToContent } from './affiliate.mjs';
 
 const ADMONITION_BY_LOCALE = {
   en: { tip: 'Tip', warning: 'Warning', danger: 'Danger', info: 'Info', note: 'Note' },
@@ -53,7 +54,7 @@ function ratingStarsHtml(ratingText) {
   );
 }
 
-function parseProductBlock(code, locale, postSlug) {
+function parseProductBlock(code, locale, postSlug, affiliate = {}) {
   const meta = {};
   for (const line of String(code || '').trim().split('\n')) {
     const m = line.match(/^([a-zA-Z_]+):\s*(.+)$/);
@@ -63,7 +64,7 @@ function parseProductBlock(code, locale, postSlug) {
   const title = meta.title || 'Product';
   const price = meta.price || '';
   const priceHtml = formatProductPriceDisplay(price, locale);
-  const url = meta.url || '#';
+  const url = applyAmazonAffiliateTag(meta.url || '#', affiliate);
   const rating = meta.rating || '';
   const note = meta.note || meta.pros || '';
   const badge = meta.badge || '';
@@ -169,7 +170,7 @@ export function slugifyHeading(s) {
   );
 }
 
-export async function createMarkdownRenderer(locale = 'en') {
+export async function createMarkdownRenderer(locale = 'en', affiliate = {}) {
   const highlighter = await getHighlighter();
   const admonitionLabels = ADMONITION_BY_LOCALE[locale] || ADMONITION_BY_LOCALE.en;
   let activePostSlug = '';
@@ -251,7 +252,7 @@ export async function createMarkdownRenderer(locale = 'en') {
     const token = tokens[idx];
     const info = token.info ? token.info.trim().toLowerCase() : '';
     if (info === 'product') {
-      return parseProductBlock(token.content, locale, activePostSlug);
+      return parseProductBlock(token.content, locale, activePostSlug, affiliate);
     }
     return defaultFence(tokens, idx, options, env, slf);
   };
@@ -260,7 +261,8 @@ export async function createMarkdownRenderer(locale = 'en') {
     md,
     render(content, postSlug = '') {
       activePostSlug = postSlug;
-      const prepared = prepareContentForToc(content);
+      const tagged = applyAffiliateTagsToContent(content, affiliate);
+      const prepared = prepareContentForToc(tagged);
       const html = md.render(prepared);
       return splitTocFromHtml(html);
     },

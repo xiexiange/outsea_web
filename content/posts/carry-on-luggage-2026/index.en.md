@@ -55,7 +55,7 @@ If you want **one carry-on** that balances price, hardside protection, and mains
 title: Samsonite Omni PC Hardside Carry-On 20"
 badge: Top pick
 price: US ~$130
-url: https://www.amazon.com/dp/B013WFNNZI
+url: https://www.amazon.com/dp/B013WFNNZI?tag=idovepicks-20
 rating: 4.5 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/luggage_Samsonite.jpg
 note: Model Omni PC 20" — polycarbonate hardside, micro-diamond texture, four multi-directional spinner wheels, cross-straps and divider, TSA-friendly layout. One of Amazon's most-reviewed carry-ons in this class.
@@ -69,7 +69,7 @@ note: Model Omni PC 20" — polycarbonate hardside, micro-diamond texture, four 
 title: Travelpro Maxlite 5 Softside Carry-On 19"
 badge: Best lightweight
 price: US ~$170
-url: https://www.amazon.com/dp/B0CSPJRLFK
+url: https://www.amazon.com/dp/B0CSPJRLFK?tag=idovepicks-20
 rating: 4.5 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/luggage_Travelpro.jpg
 note: Model Maxlite 5 19" — ultra-lightweight softside, tapered shape, front and side exterior pockets, four spinners, fabric water- and stain-resistant coating. Compact height for tighter cabin limits.
@@ -83,7 +83,7 @@ note: Model Maxlite 5 19" — ultra-lightweight softside, tapered shape, front a
 title: Travelpro Platinum Elite Hardside Carry-On 21"
 badge: Premium pick
 price: US ~$280+
-url: https://www.amazon.com/dp/B0B12RPMXF
+url: https://www.amazon.com/dp/B0B12RPMXF?tag=idovepicks-20
 rating: 4.6 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/luggage_Travelpro_315.jpg
 note: Model Platinum Elite Hardside 21" — premium hardside shell, precision handle system, deluxe interior organization, integrated USB port on select variants (confirm listing). Travelpro's airline-professional warranty tier.

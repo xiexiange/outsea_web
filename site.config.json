@@ -32,5 +32,10 @@
     { "label": "Home", "url": "/" },
     { "label": "Deals", "url": "/tags/deals/" },
     { "label": "Guides", "url": "/tags/guides/" }
-  ]
+  ],
+  "affiliate": {
+    "amazon": {
+      "com": "idovepicks-20"
+    }
+  }
 }

@@ -54,7 +54,7 @@ description: 面向跨境与海外买家的 13 加仑厨房垃圾袋选购指南
 title: Hefty Ultra Strong 13 Gallon Trash Bags (80 Count)
 badge: 主推
 price: US ~$12
-url: https://www.amazon.com/dp/B01G8KYP7Y
+url: https://www.amazon.com/dp/B01G8KYP7Y?tag=idovepicks-20
 rating: 4.7 / 5（品类参考，请以最新评价为准）
 image: https://images.easy-vps.com/202606/garbage_hefty.jpg
 note: 13 加仑厨房抽绳 — Ultra Strong 厚度，80 只装。标价约 ~$0.15/只。日常厨房湿垃圾与标准高筒桶的稳妥默认。
@@ -68,7 +68,7 @@ note: 13 加仑厨房抽绳 — Ultra Strong 厚度，80 只装。标价约 ~$0.
 title: Budget Drawstring Kitchen Trash Bags (Multi-Roll Pack)
 badge: 预算之选
 price: US 低价（随只数变化）
-url: https://www.amazon.com/dp/B0FHPX175X
+url: https://www.amazon.com/dp/B0FHPX175X?tag=idovepicks-20
 rating: 4.0 / 5（品类参考，请以最新评价为准）
 image: https://images.easy-vps.com/202606/garbage_cheapest.jpg
 note: 通用预算抽绳厨房垃圾袋 — 多卷超值装、标价低。下单前务必在商品页确认 13 加仑尺寸与总只数；厚度因 listing 而异。
@@ -82,7 +82,7 @@ note: 通用预算抽绳厨房垃圾袋 — 多卷超值装、标价低。下单
 title: Glad ForceFlex 13 Gallon Trash Bags (110 Count, Unscented)
 badge: 进阶之选
 price: US ~$20
-url: https://www.amazon.com/dp/B0CK9RZGDX
+url: https://www.amazon.com/dp/B0CK9RZGDX?tag=idovepicks-20
 rating: 4.8 / 5（品类参考，请以最新评价为准）
 image: https://images.easy-vps.com/202606/garbage_Glad.jpg
 note: 型号 ForceFlex 13 gal — 110 只装、无香、抽绳。侧壁可拉伸包裹异形垃圾。典型约 ~$0.18/只；重度厨房用户一年少补几次货。

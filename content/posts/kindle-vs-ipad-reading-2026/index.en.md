@@ -55,7 +55,7 @@ If you want **one device dedicated to books**— fiction, long nonfiction, trave
 title: Amazon Kindle Paperwhite (12th Gen, 16GB)
 badge: Top pick
 price: US ~$160
-url: https://www.amazon.com/dp/B0CFPJYX7P
+url: https://www.amazon.com/dp/B0CFPJYX7P?tag=idovepicks-20
 rating: 4.6 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pad_Kindle.jpg
 note: 12th gen Paperwhite —7" 300 ppi glare-free display, adjustable warm light, IPX8 waterproof, USB-C, up to 12 weeks battery (varies by use). 16GB holds thousands of titles.
@@ -69,7 +69,7 @@ note: 12th gen Paperwhite —7" 300 ppi glare-free display, adjustable warm ligh
 title: Amazon Kindle (2024, 16GB)
 badge: Best budget e-reader
 price: US ~$110
-url: https://www.amazon.com/dp/B0CNV9F72P
+url: https://www.amazon.com/dp/B0CNV9F72P?tag=idovepicks-20
 rating: 4.5 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pad_kindle_85_dolar.jpg
 note: 2024 base Kindle —6" 300 ppi e-ink, front light (no warm tone), USB-C, weeks of battery. 16GB storage. No waterproof rating.
@@ -83,7 +83,7 @@ note: 2024 base Kindle —6" 300 ppi e-ink, front light (no warm tone), USB-C, w
 title: Apple iPad (10th Generation, 64GB)
 badge: Best for mixed reading
 price: US ~$330
-url: https://www.amazon.com/dp/B0BJLF2BRM
+url: https://www.amazon.com/dp/B0BJLF2BRM?tag=idovepicks-20
 rating: 4.8 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pad_apple.jpg
 note: iPad 10th gen —10.9" Liquid Retina display, A14 chip, Touch ID, USB-C. Runs Kindle app, Apple Books, Libby, Hoopla, PDF readers, and comic apps. Wi-Fi 64GB model.

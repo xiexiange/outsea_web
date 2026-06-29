@@ -54,7 +54,7 @@ If you want **one sub-$50 appliance** that replaces a slow cooker, rice cooker, 
 title: Instant Pot Duo Mini 3 Qt 7-in-1 Multi-Cooker
 badge: Top pick
 price: ~US $40
-url: https://www.amazon.com/dp/B06Y1YD5W7
+url: https://www.amazon.com/dp/B06Y1YD5W7?tag=idovepicks-20
 rating: 4.6 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/kitchen_Instant.jpg
 note: Model Duo Mini 3 Qt — pressure cook, slow cook, rice, steam, sauté, yogurt, and warm. 3-quart capacity (~1— servings). 13 one-touch programs, stainless steel inner pot. Compact footprint for small kitchens.
@@ -68,7 +68,7 @@ note: Model Duo Mini 3 Qt — pressure cook, slow cook, rice, steam, sauté, yog
 title: ThermoPro TP03 Digital Instant Read Meat Thermometer
 badge: Best budget essential
 price: ~US $10
-url: https://www.amazon.com/dp/B01IHHLB3W
+url: https://www.amazon.com/dp/B01IHHLB3W?tag=idovepicks-20
 rating: 4.5 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/kitchen_TempPro.jpg
 note: Model TP03 —3— second read time, foldaway probe, °F/°C switch, auto-off. Accurate to ±0.9°F. Ideal for chicken, steak, fish, and baking temps.
@@ -82,7 +82,7 @@ note: Model TP03 —3— second read time, foldaway probe, °F/°C switch, auto-
 title: Mueller Ultra-Stick 500 Watt Immersion Hand Blender
 badge: Best immersion blender under $50
 price: ~US $40
-url: https://www.amazon.com/dp/B075X1KPLZ
+url: https://www.amazon.com/dp/B075X1KPLZ?tag=idovepicks-20
 rating: 4.4 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/kitchen_MuellerLiving.jpg
 note: Model Ultra-Stick —500W motor, 8-speed control, titanium steel 4-blade attachment, detachable shaft for easy cleaning. Blends in the pot— no transfer to a jar blender.

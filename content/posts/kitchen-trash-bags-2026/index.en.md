@@ -54,7 +54,7 @@ If you want **one 13-gallon drawstring box** that balances price, strength, and 
 title: Hefty Ultra Strong 13 Gallon Trash Bags (80 Count)
 badge: Top pick
 price: US ~$12
-url: https://www.amazon.com/dp/B01G8KYP7Y
+url: https://www.amazon.com/dp/B01G8KYP7Y?tag=idovepicks-20
 rating: 4.7 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/garbage_hefty.jpg
 note: 13 gallon kitchen drawstring — Ultra Strong thickness, 80-count box. Typical ~$0.15/bag at list price. Good default for daily kitchen waste and standard tall cans.
@@ -68,7 +68,7 @@ note: 13 gallon kitchen drawstring — Ultra Strong thickness, 80-count box. Typ
 title: Budget Drawstring Kitchen Trash Bags (Multi-Roll Pack)
 badge: Best budget
 price: US low (varies by count)
-url: https://www.amazon.com/dp/B0FHPX175X
+url: https://www.amazon.com/dp/B0FHPX175X?tag=idovepicks-20
 rating: 4.0 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/garbage_cheapest.jpg
 note: Generic budget drawstring kitchen trash bags — multi-roll value packs at a low shelf price. Verify 13-gallon size and total bag count on the product page before ordering; thickness varies by listing.
@@ -82,7 +82,7 @@ note: Generic budget drawstring kitchen trash bags — multi-roll value packs at
 title: Glad ForceFlex 13 Gallon Trash Bags (110 Count, Unscented)
 badge: Premium pick
 price: US ~$20
-url: https://www.amazon.com/dp/B0CK9RZGDX
+url: https://www.amazon.com/dp/B0CK9RZGDX?tag=idovepicks-20
 rating: 4.8 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/garbage_Glad.jpg
 note: Model ForceFlex 13 gal —110-count box, unscented, drawstring. Stretchy side walls flex around bulky trash. Typical ~$0.18/bag; fewer restocks per year for heavy kitchen users.

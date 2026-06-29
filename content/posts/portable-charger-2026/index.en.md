@@ -54,7 +54,7 @@ If you want **one power bank** for phones, tablets, and occasional laptop top-up
 title: Anker Power Bank 20K (87W, Built-In USB-C Cable)
 badge: Top pick
 price: ~US $47
-url: https://www.amazon.com/dp/B0CXDXP8VR
+url: https://www.amazon.com/dp/B0CXDXP8VR?tag=idovepicks-20
 rating: 4.6 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/charger_anker.jpg
 note: Model A1383 — 20,000mAh, up to 65W per USB-C, 87W shared across three ports. Built-in cable + 1 USB-C + 1 USB-A. ~15.5 oz (440g). Recharge in ~1.5h with a 65W adapter.
@@ -68,7 +68,7 @@ note: Model A1383 — 20,000mAh, up to 65W per USB-C, 87W shared across three po
 title: Belkin BoostCharge 10K Power Bank (Integrated USB-C Cable)
 badge: Best for light travel
 price: ~US $19
-url: https://www.amazon.com/dp/B0DFYCSRB2
+url: https://www.amazon.com/dp/B0DFYCSRB2?tag=idovepicks-20
 rating: 4.5 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/charger_belkin.jpg
 note: Model BPB021 — 10,000mAh, 20W PD via built-in USB-C cable or second USB-C port. Under 215g. Two devices share 15W when both ports are used. 2-year warranty.
@@ -82,7 +82,7 @@ note: Model BPB021 — 10,000mAh, 20W PD via built-in USB-C cable or second USB-
 title: Apple iPhone Air MagSafe Battery
 badge: Best MagSafe add-on
 price: ~US $59
-url: https://www.amazon.com/dp/B0FQFH9BST
+url: https://www.amazon.com/dp/B0FQFH9BST?tag=idovepicks-20
 rating: 4.4 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/charger_magsafe.jpg
 note: Made for iPhone Air — snap-on wireless charging up to 12W, up to ~65% extra battery life per Apple. Not a general power bank; power adapter and cable sold separately.

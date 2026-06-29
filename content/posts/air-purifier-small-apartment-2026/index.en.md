@@ -55,7 +55,7 @@ If you want **one purifier** for a studio or 1-bedroom main room with automatic 
 title: Levoit Core 600S-P Smart Air Purifier
 badge: Top pick
 price: ~US $250
-url: https://www.amazon.com/dp/B09BJMY8HL
+url: https://www.amazon.com/dp/B09BJMY8HL?tag=idovepicks-20
 rating: 4.6 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/air_conditioner_levoit2.jpg
 note: Model Core 600S-P — AHAM CADR 410/410/410, True HEPA 3-in-1 filter, laser PM2.5 sensor, Auto/Sleep modes, WiFi + Alexa. ~12.3" W × 12.3" footprint. Filter replacement typically every 6–8 months (~$50–70 per set).
@@ -69,7 +69,7 @@ note: Model Core 600S-P — AHAM CADR 410/410/410, True HEPA 3-in-1 filter, lase
 title: Levoit Core 300-P Air Purifier
 badge: Best budget HEPA
 price: ~US $80
-url: https://www.amazon.com/dp/B07VVK39F7
+url: https://www.amazon.com/dp/B07VVK39F7?tag=idovepicks-20
 rating: 4.7 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/air_conditioner_levoit.jpg
 note: Model Core 300-P — AHAM VERIFIDE, True HEPA 3-in-1 filter, Sleep Mode as low as 22 dB, 360° intake. ~8.7" × 14.2" cylinder, ~7.9 lb. Covers bedroom-sized spaces; no WiFi or laser sensor.
@@ -83,7 +83,7 @@ note: Model Core 300-P — AHAM VERIFIDE, True HEPA 3-in-1 filter, Sleep Mode as
 title: Dyson Purifier Cool TP07 Smart Air Purifier and Fan
 badge: Best premium combo
 price: ~US $650
-url: https://www.amazon.com/dp/B09LT8THGS
+url: https://www.amazon.com/dp/B09LT8THGS?tag=idovepicks-20
 rating: 4.3 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/air_conditioner_dyson.jpg
 note: Model TP07 — HEPA H13 purification, 350° oscillation, backward airflow mode (purify without cooling), LCD + MyDyson app reporting PM2.5/PM10/noise/VOCs. ~41" tower. Not a substitute for air conditioning.

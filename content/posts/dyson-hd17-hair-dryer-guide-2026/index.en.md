@@ -69,7 +69,7 @@ note: Confirm color bundle, voltage (230V vs 110V), attachment count, and local 
 title: Dyson Supersonic Nural™ (HD16 family)
 badge: Scalp-friendly
 price: See Amazon listing for your country
-url: https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8
+url: https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8?tag=idovepicks-20
 rating: 4.4+ / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/dyson_hd16.jpg
 note: Intelligent modes for scalp-aware drying; slightly different form factor than r™.
@@ -81,7 +81,7 @@ note: Intelligent modes for scalp-aware drying; slightly different form factor t
 title: Dyson Supersonic™ Hair Dryer (classic)
 badge: Budget pick
 price: See Amazon product page (often below r™ launch pricing)
-url: https://www.amazon.com/Dyson-Supersonic-Nickel-Copper-Presentation/dp/B0B4T6RTZ2
+url: https://www.amazon.com/Dyson-Supersonic-Nickel-Copper-Presentation/dp/B0B4T6RTZ2?tag=idovepicks-20
 rating: 4.2+ / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/dyson_Supersonic.jpg
 note: Not the HD17 / r™ body; strong pick when you want Dyson without the newest chassis.

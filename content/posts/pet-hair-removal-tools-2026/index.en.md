@@ -54,7 +54,7 @@ If you want **one tool that cuts shedding at the source** before fur coats your 
 title: Furminator Undercoat Deshedding Tool for Dogs & Cats
 badge: Top pick
 price: ~US $35
-url: https://www.amazon.com/dp/B07MZMLZZ3
+url: https://www.amazon.com/dp/B07MZMLZZ3?tag=idovepicks-20
 rating: 4.7 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pet_FURminator.jpg
 note: Model varies by coat length (Short Hair / Long Hair) and pet size (S / M / L / Giant). Stainless steel deShedding edge reaches undercoat without cutting skin when used as directed. Reduces loose hair before it spreads—pair with correct size for your breed.
@@ -68,7 +68,7 @@ note: Model varies by coat length (Short Hair / Long Hair) and pet size (S / M /
 title: ChomChom Roller Pet Hair Remover
 badge: Best budget fabric tool
 price: ~US $25
-url: https://www.amazon.com/dp/B00BAGTNAQ
+url: https://www.amazon.com/dp/B00BAGTNAQ?tag=idovepicks-20
 rating: 4.4 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pet_ChomChom.jpg
 note: Reusable manual roller—no sticky sheets or refills. Works on couches, bedding, car fabric, and clothing. Collects fur in a built-in chamber you empty by hand.
@@ -82,7 +82,7 @@ note: Reusable manual roller—no sticky sheets or refills. Works on couches, be
 title: Bissell Pet Hair Eraser Cordless Handheld Vacuum
 badge: Best handheld for pet hair
 price: ~US $40
-url: https://www.amazon.com/dp/B07CB6RBSP
+url: https://www.amazon.com/dp/B07CB6RBSP?tag=idovepicks-20
 rating: 4.4 / 5 (category average; check latest reviews)
 image: https://images.easy-vps.com/202606/pet_Bissell.jpg
 note: Model 2390A — motorized brush roll for pet hair, 14.4V lithium-ion cordless, crevice and upholstery tools included. Built for stairs, auto interiors, and furniture—not whole-home floor cleaning.

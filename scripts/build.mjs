@@ -117,6 +117,7 @@ async function loadSiteConfig() {
     iconText: 'OP',
     iconImage: '',
     tutorialNav: [{ label: 'Home', url: '/' }],
+    affiliate: { amazon: { com: '' } },
   };
 
   try {
@@ -142,6 +143,10 @@ async function loadSiteConfig() {
       iconImage: parsed.iconImage != null ? String(parsed.iconImage).trim() : defaults.iconImage,
       tutorialNav: tutorialNav.length ? tutorialNav : defaults.tutorialNav,
       encrypted: parsed.encrypted && typeof parsed.encrypted === 'object' ? parsed.encrypted : {},
+      affiliate:
+        parsed.affiliate && typeof parsed.affiliate === 'object'
+          ? parsed.affiliate
+          : defaults.affiliate,
     };
   } catch {
     return defaults;
@@ -666,7 +671,7 @@ if (encryptRules.authApiUrl && !encryptKey) {
 const postsByLocale = {};
 const pagesByLocale = {};
 for (const locale of localeList) {
-  const markdownRenderer = await createMarkdownRenderer(locale);
+  const markdownRenderer = await createMarkdownRenderer(locale, baseConfig.affiliate);
   postsByLocale[locale] = await loadPostsForLocale(locale, markdownRenderer.render, encryptRules);
   pagesByLocale[locale] = await loadPagesForLocale(locale, PAGES_DIR, markdownRenderer.render);
 }
